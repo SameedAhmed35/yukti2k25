@@ -1,0 +1,116 @@
+:root {
+    --neon-pink: #ff2d55;
+    --neon-blue: #00fff9;
+    --dark-bg: #0a0a0f;
+    --rebecca-prpl: #663399;
+}
+
+@font-face {
+    font-family: Blanka;
+    src: url('../fonts/Blanka-Regular.otf');
+}
+
+@font-face {
+    font-family: SBZero;
+    src: url('../fonts/Saved by Zero Rg.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-bg {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-image:
+            linear-gradient(var(--neon-blue) 1px, transparent 1px),
+            linear-gradient(90deg, var(--neon-blue) 1px, transparent 1px);
+    background-size: 50px 50px;
+    transform: rotate(45deg);
+    opacity: 0.1;
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+    0% { transform: rotate(45deg) translateY(0); }
+    100% { transform: rotate(45deg) translateY(-50%); }
+}
+
+.content {
+    text-align: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border: 1px solid var(--neon-blue);
+    border-radius: 10px;
+    max-width: 90%;
+    width: 600px;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    font-family: Blanka, fantasy;
+    font-size: 3rem;
+    color: var(--neon-pink);
+    margin-bottom: 2rem;
+    text-shadow: 0.05em 0 0 var(--neon-pink),
+    -0.05em -0.025em 0 var(--neon-blue);
+}
+
+.message {
+    font-family: SBZero, sans-serif;
+    font-size: 1.5rem;
+    color: var(--neon-blue);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: var(--neon-blue);
+    border: 2px solid var(--neon-blue);
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: SBZero, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: var(--neon-blue);
+    color: var(--dark-bg);
+    box-shadow: 0 0 20px rgba(0, 255, 249, 0.4);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    .message {
+        font-size: 1.2rem;
+    }
+    .content {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yukti 2k25</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!--Scroll Indicator -->
+<div class="scroll-progress"></div>
+
+<nav class="navbar">
+    <div class="image-div">
+        <a href="https://vtu.ac.in" target="_blank">
+            <img src="/assets/VTULogo.png" alt="VTU Logo" class="nav-logo">
+        </a>
+    </div>
+    <a href="https://yukti.bastamasta.dev" class="nav-brand" target="_blank">Yukti 2k25</a>
+    <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+    </div>
+</nav>
+
+<div id="home" class="hero">
+    <div class="grid-bg"></div>
+    <div class="glitch-container">
+        <h1 class="glitch">Yukti 2k25</h1>
+        <p class="subtitle">Reimagining tomorrow</p>
+    </div>
+    <!--    Event Countdown Timer    -->
+    <div class="countdown">
+        <div class="countdown-item">
+            <span class="countdown-value" id="days">00</span>
+            <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-value" id="seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+        </div>
+    </div>
+</div>
+
+<div id="about" class="content adjust-scroll">
+    <h2>Eco-Verse (Open Mic on stage)</h2>
+    <p>
+        Step into the Eco-Verse, where the stage is yours to command.  Amplify your voice in this open mic sanctuary,
+        a digital echo chamber for stories, songs, and spoken word. Share your truths, your dreams, your very essence
+        with the cyberpunk collective.  Let your voice resonate through the neon-drenched network, connecting with hearts
+        and minds in the electric sprawl.  Unleash your inner artist and become part of the Eco-Verse symphony.
+    </p>
+</div>
+
+<div id="events" class="content adjust-scroll">
+    <h2>Open-Mic Events</h2>
+
+    <!--  Stand-Up Comedy  -->
+    <div class="event-card" data-url="https://yukti.bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Glitch & Giggles (Stand-up Comedy)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Experience the hilarious hardware malfunctions of Glitch & Giggles, where cyberpunk stand-up comedians
+            short-circuit your funny bone with data-driven wit and neon-infused humor.
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>A future where AI tells jokes? Not yet! But you can! Bring out your inner comedian, drop some
+                    futuristic humor, and keep the audience laughing with your sharp wit and clever punchlines.</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Jnana Samvada; Main Admin Building</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">TBD</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">1 (Individual Event)</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!--  Poetry  -->
+    <div class="event-card" data-url="https://yukti.bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>EchoVerse (Poetry/Open Word/Shayari)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            In the digital sanctuary of EchoVerse, let your words resonate through the neon-lit network, where cyberpunk
+            poets and storytellers weave tapestries of verse and shayari, painting the city's soul in vibrant hues.
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>Where words become waves of change! Pour your heart out through poetry, shayari, or spoken word as
+                    you explore themes of innovation, hope, and the world of tomorrow. Let your words spark revolutions!</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Jnana Samvada; Main Admin Building</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">TBD</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">1 (Individual Event)</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn1">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!--  Mimicry  -->
+    <div class="event-card" data-url="https://yukti.bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Cyber Expressions (Mimicry)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Decode the city's voices in Cyber Expressions, where mimicry masters remix reality, channeling the sounds
+            and personalities of the cyberpunk world into a symphony of hilarious impressions.
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>If you can be anyone, why be just one? Imitate celebrities, influencers, and even AI voices in this fun-filled mimicry challenge where entertainment meets talent.</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Jnana Samvada; Main Admin Building</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">TBD</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">1 (Individual Event)</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn2">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!--  Mime  -->
+    <div class="event-card" data-url="https://yukti.bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Cyber Masquerade (Mime Act)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Silent stories speak volumes in Cyber Masquerade, where mime artists weave narratives of the cyberpunk world,
+            expressing emotions and experiences through movement and gesture in the neon-drenched shadows.
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>Silence speaks louder than words! A gripping performance where expressions, body language, and
+                    storytelling create powerful narratives—no dialogue, just impact.</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Jnana Samvada; Main Admin Building</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">TBD</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">1 (Solo) 4 (Group)</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn3">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Disclaimer Section -->
+<div class="disclaimer-section">
+    <h3 class="disclaimer-title">
+        <i class="fas fa-exclamation-triangle"></i>
+        Important Notice
+    </h3>
+    <div class="disclaimer-content">
+        <p>Before registering for Yukti 2k25 events, please note the following important points:</p>
+        <ul class="disclaimer-points">
+            <li>Some events may have overlapping schedules. Please verify the timings carefully with the personnel in charge before registering.</li>
+            <li>It is mandatory to read the complete event guidelines and rules in the brochure before registration.</li>
+            <li>Event schedules and venues are subject to change. Stay updated through our official social media channels, or through this website.</li>
+            <li>Participants are responsible for checking any event-specific requirements or prerequisites.</li>
+        </ul>
+        <p style="margin-top: 1rem;">For any queries regarding event schedules or registration, please contact the event coordinators listed in the brochure.</p>
+    </div>
+</div>
+
+<!-- Brochure Download Section -->
+<div class="brochure-section">
+    <h2 class="brochure-title">Open-Mic Events Brochure</h2>
+    <p class="brochure-description">
+        Download our comprehensive event category brochure to explore all the events, schedules, and rules for each event under the Open-Mic Category.
+    </p>
+    <a href="../../assets/event-brochures/open-mic.pdf" download class="download-button">
+        <i class="fas fa-file-download"></i>
+        Download Open-Mic Brochure (6.70 MB)
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-grid">
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="quick-links">
+                    <a href="https://yukti.bastamasta.dev/#about" class="quick-link">About Yukti</a>
+                    <a href="https://yukti.bastamasta.dev/#events" class="quick-link">Events</a>
+                    <a href="https://vtu.ac.in" class="quick-link">VTU Website</a>
+                    <a href="https://yukti.bastamasta.dev/oops" class="quick-link">Registration</a>
+                    <a href="#contacts" class="quick-link">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Connect Section -->
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yukti_vtu?igsh=MWJvend5a3BsOWYzdw==" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://x.com/VTU_OFFICIAL_PR?t=1664Z_kmwNIND15jmzubsQ&s=08" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://www.linkedin.com/company/vtu-official-belagavi-pr/" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://youtube.com/@yukti_vtu-op?si=X0i0t95cgdiow2Iy" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section" id="contacts">
+                <h3>Contact Info</h3>
+                <p>Visvesvaraya Technological University</p>
+                <p>"Jnana Sangama", Belagavi</p>
+                <p>Karnataka - 590018</p>
+                <p>Email: vtu.yukti2k25@gmail.com</p>
+                <p>Phone: +91 890 414 2106</p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 Yukti - VTU Techno-Cultural Fest. All rights reserved.</p>
+            <p>Made with 💙 by <a href="https://bastamasta.dev" target="_blank">Sameed Ahmed</a>, with help form
+                <a href="https://github.com/memanju2005">Manjunath K</a>.</p>
+            <p>Graphics and Theme by <a href="https://www.instagram.com/phoenixogd">Arpan S</a></p>
+        </div>
+    </div>
+</footer>
+<button id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="../script.js"></script>
+</body>
+</html>

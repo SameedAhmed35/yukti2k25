@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yukti-2K25 Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="form-container">
+    <h1><span class="yuk">Yukti-2K25</span> Registration</h1>
+    <form action="https://formspree.io/f/mrbekadv" method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="college">College Name</label>
+            <input type="text" id="college" name="college" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+    
+        </div>
+
+        <div class="form-group">
+            <label for="eventCategory">Select Event Category</label>
+            <select id="eventCategory" onchange="updateEvents(this.value)">
+                <option value="">--Select--</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Technical">Technical</option>
+                <option value="Management">Management</option>
+                <option value="Gaming & Adventure Zone">Gaming & Adventure Zone</option>
+                <option value="Art & Creativity">Art & Creativity</option>
+                <option value="Robotics & Mechanical">Robotics & Mechanical</option>
+            </select>
+        </div>
+
+        <div id="eventCheckboxContainer" class="form-group">
+            <!-- Event checkboxes will appear here -->
+        </div>
+
+        <div class="form-group">
+            <label for="accommodation">Accommodation Required?</label>
+            <select id="accommodation" name="accommodation">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+            <div class="note">*Accommodation is only available for participants outside Belgaum District, for a maximum of 2 days.</div>
+        </div>
+
+        <div class="form-group">
+            <h4 class="image-header"> Payment QR </h4>
+            <div class="image-div"> <img src="../assets/VTULogo.png" alt="Payment Qr Code"> </div>
+            <label for="utr">UTR Number</label>
+            <input type="text" id="utr" name="utr" required>
+            <div class="note">*The amount shown should be paid by scanning the QR code. Please provide the UTR number after payment to complete the registration.</div>
+        </div>
+
+        <div id="totalCost" class="total-cost">Total Cost: ₹0</div>
+
+        <div class="form-footer">
+                <button type="submit">Register Now</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

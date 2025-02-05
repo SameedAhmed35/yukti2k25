@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yukti 2k25</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!--Scroll Indicator -->
+<div class="scroll-progress"></div>
+
+<nav class="navbar">
+    <div class="image-div">
+        <a href="https://vtu.ac.in" target="_blank">
+            <img src="/assets/VTULogo.png" alt="VTU Logo" class="nav-logo">
+        </a>
+    </div>
+    <a href="https://yukti.bastamasta.dev" class="nav-brand" target="_blank">Yukti 2k25</a>
+    <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+    </div>
+</nav>
+
+<div id="home" class="hero">
+    <div class="grid-bg"></div>
+    <div class="glitch-container">
+        <h1 class="glitch">Yukti 2k25</h1>
+        <p class="subtitle">Reimagining tomorrow</p>
+    </div>
+    <!--    Event Countdown Timer    -->
+    <div class="countdown">
+        <div class="countdown-item">
+            <span class="countdown-value" id="days">00</span>
+            <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-value" id="seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+        </div>
+    </div>
+</div>
+
+<div id="about" class="content adjust-scroll">
+    <h2>🎭 Culturals 🎭</h2>
+    <p>
+        Immerse yourself in the pulse of the neon-drenched city, where art, music, and innovation collide.
+        Witness electrifying performances, from sonic battles on stage to kinetic grace in the dance arena.
+        Unleash your creativity, code the future, and explore the boundaries of technology and expression.
+        Connect with fellow cyberpunks, share your passion, and ignite the spark of inspiration.
+        Experience the future of culture, where the digital and the physical intertwine in a symphony of light and sound.
+    </p>
+</div>
+
+<div id="events" class="content adjust-scroll">
+    <h2>Cultural Events</h2>
+
+    <!--  Dance  -->
+    <div class="event-card" data-url="https://bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Neon Moves (Dance - Group/Solo)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Witness sonic battles, kinetic grace, and captured moments in the chrome-lit city!
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>Get ready to set the stage ablaze! Whether it's a high-energy group performance or a soul-stirring solo, show off your dance moves with neon-lit vibes and futuristic beats. The stage is yours—dance like tomorrow depends on it!</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Main Auditorium</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">Haseeb: +91 8431209785</span>
+                            <span class="detail-value">Abishek: +91 7411631327</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">1 (Solo) 6-10 (Group)</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!--  Singing  -->
+    <div class="event-card" data-url="https://bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Echo of the Cosmos (Singing - Group/Solo)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Sing your heart out to the ambience of melodious tunes!
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>Let your voice echo through the cosmos! Whether you belt out a soulful melody or a power-packed group performance, this is your chance to sing your way into the future and leave the audience spellbound.</p>
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">TBA</span>
+<!--                        Senate Hall ???-->
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">Tayyab: +91 8971894336</span>
+                            <span class="detail-value">Isiri: +91 9019893399</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">1 (Solo) 6 (Group)</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn1">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!--  Nukkad Natak  -->
+    <div class="event-card" data-url="https://bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Circuit Tales (Nukkad Natak)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Amplify the city's pulse with raw emotion and unfiltered stories, illuminating the shadows of the neon-drenched world.
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>A street play revolution! Use drama, emotions, and raw energy to highlight social issues and futuristic challenges. Your act today can inspire a change for tomorrow!</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Sports Complex</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact (SOLO)</span>
+                        <div class="contact-values">
+                            <span class="detail-value">Ambika: +91 9740920683</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact (GROUP)</span>
+                        <div class="contact-values">
+                            <span class="detail-value">Rakshita Kammar: +91 8660213576</span>
+                            <span class="detail-value">Sheerin Nadaf: +91 7892934793</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">TBD</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn2">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!--  Battle of bands  -->
+    <div class="event-card" data-url="https://bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Resonance Reign (Battle of Bands)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Witness bands clash in a symphony of synth-soaked riffs and data-driven beats, battling for supremacy under the neon glow.
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>Guitars shredding, beats dropping, and voices soaring! Bands go head-to-head in a musical showdown where the best takes the throne. The future of music is here—are you ready to own it?</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Amphitheatre</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">Vasudha: +91 9480190353</span>
+                            <span class="detail-value">Shreyash: +91 8123245359</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">TBD</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn3">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--  Battle of DJs  -->
+    <div class="event-card" data-url="https://bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>DJ Resonance Reign (Battle of DJs)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Witness DJs unleash a torrent of data-driven beats and electrifying mixes, battling for control of the resonance frequency in the heart of the neon city.
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>Turntables, beats, and a crowd that never stops moving! Whether you drop EDM, techno, or desi bass, spin your magic and let the rhythm of tomorrow take over.</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Amphitheatre</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">TBD</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">1 (Individual Event)</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn5">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--  Photography  -->
+    <div class="event-card" data-url="https://bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Pixel Chronicles (Photography - Reel Showdown, Cinematography/Short-Film)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+
+        <div class="card-preview">
+            Pixel Chronicles showcases the sharpest lenses and the most compelling narratives, from reel showdowns to cyberpunk short films, illuminating the city's stories in vibrant detail.
+        </div>
+
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>Lights. Camera. Create! Show off your storytelling skills in photography, reels, and cinematography with futuristic themes.</p>
+
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Classroom (TBA)</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">Megha: +91 7338084577</span>
+                            <span class="detail-value">Sanjana: +91 9019776735</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">3</span>
+                    </div>
+                </div>
+
+                <button class="register-btn" id="reg-btn4">
+                    <span>Register Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ramp Walk -->
+    <div class="event-card" data-url="https://bastamasta.dev/oops">
+        <div class="card-header">
+            <h3>Futuristic Vogue (Ramp Walk - Corporate Walk)</h3>
+            <span class="expand-icon">+</span>
+        </div>
+        <div class="card-preview">
+            Where fashion meets the future! Step onto the runway and redefine style with a blend of corporate elegance
+            and futuristic flair.
+        </div>
+        <div class="card-expanded">
+            <div class="expanded-content">
+                <h4>Event Details</h4>
+                <p>Whether you exude the confidence of a CEO or the innovation of a trendsetter, this is your moment
+                    to shine. Command the stage, own the look, and walk your way into the future!</p>
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">Feb 20-21, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">Main Stage</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Rewards</span>
+                        <span class="detail-value">General Championship for the Institution</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Contact</span>
+                        <div class="contact-values">
+                            <span class="detail-value">TBD</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Max Participants Per Team</span>
+                        <span class="detail-value">1 (Individual Event)</span>
+                    </div>
+                </div>
+                <button class="register-btn" id="reg-btn6"><span>Register Now</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Disclaimer Section -->
+<div class="disclaimer-section">
+    <h3 class="disclaimer-title">
+        <i class="fas fa-exclamation-triangle"></i>
+        Important Notice
+    </h3>
+    <div class="disclaimer-content">
+        <p>Before registering for Yukti 2k25 events, please note the following important points:</p>
+        <ul class="disclaimer-points">
+            <li>Some events may have overlapping schedules. Please verify the timings carefully with the personnel in charge before registering.</li>
+            <li>It is mandatory to read the complete event guidelines and rules in the brochure before registration.</li>
+            <li>Event schedules and venues are subject to change. Stay updated through our official social media channels, or through this website.</li>
+            <li>Participants are responsible for checking any event-specific requirements or prerequisites.</li>
+        </ul>
+        <p style="margin-top: 1rem;">For any queries regarding event schedules or registration, please contact the event coordinators listed in the brochure.</p>
+    </div>
+</div>
+
+<!-- Brochure Download Section -->
+<div class="brochure-section">
+    <h2 class="brochure-title">Cultural Events Brochure</h2>
+    <p class="brochure-description">
+        Download our comprehensive event category brochure to explore all the events, schedules, and rules for each event under the Culturals Category.
+    </p>
+    <a href="../../assets/event-brochures/culturals.pdf" download class="download-button">
+        <i class="fas fa-file-download"></i>
+        Download Cultural Brochure (11.9 MB)
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-grid">
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="quick-links">
+                    <a href="https://yukti.bastamasta.dev/#about" class="quick-link">About Yukti</a>
+                    <a href="https://yukti.bastamasta.dev/#events" class="quick-link">Events</a>
+                    <a href="https://vtu.ac.in" class="quick-link">VTU Website</a>
+                    <a href="https://yukti.bastamasta.dev/oops" class="quick-link">Registration</a>
+                    <a href="#contacts" class="quick-link">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Connect Section -->
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yukti_vtu?igsh=MWJvend5a3BsOWYzdw==" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://x.com/VTU_OFFICIAL_PR?t=1664Z_kmwNIND15jmzubsQ&s=08" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://www.linkedin.com/company/vtu-official-belagavi-pr/" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://youtube.com/@yukti_vtu-op?si=X0i0t95cgdiow2Iy" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section" id="contacts">
+                <h3>Contact Info</h3>
+                <p>Visvesvaraya Technological University</p>
+                <p>"Jnana Sangama", Belagavi</p>
+                <p>Karnataka - 590018</p>
+                <p>Email: vtu.yukti2k25@gmail.com</p>
+                <p>Phone: +91 890 414 2106</p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 Yukti - VTU Techno-Cultural Fest. All rights reserved.</p>
+            <p>Made with 💙 by <a href="https://bastamasta.dev" target="_blank">Sameed Ahmed</a>, with help form
+                <a href="https://github.com/memanju2005">Manjunath K</a>.</p>
+            <p>Graphics and Theme by <a href="https://www.instagram.com/phoenixogd">Arpan S</a></p>
+        </div>
+    </div>
+</footer>
+<button id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="../script.js"></script>
+</body>
+</html>
